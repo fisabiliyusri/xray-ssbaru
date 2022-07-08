@@ -1,0 +1,14 @@
+[Unit]
+Description=Xray
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=simple 
+ExecStart=/usr/bin/ss2022/xray
+ExecReload=/bin/kill -HUP $MAINPID
+RestartSec=5s
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

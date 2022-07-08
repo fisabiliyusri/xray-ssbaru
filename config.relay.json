@@ -1,0 +1,26 @@
+{
+  "inbounds": [
+    {
+      "port": 10082,
+      "protocol": "shadowsocks",
+      "settings": {
+        "method": "2022-blake3-aes-128-gcm",
+        "password": "zxk/Jbk70Jo33iNjouPTC718iWEFDCxVXrfO56sshUA=",
+        "clients": [
+          {
+            "address": "142.4.123.88",
+            "port": 10082,
+            "password": "zxk/Jbk70Jo33iNjouPTC718iWEFDCxVXrfO56sshUA=",
+            "email": "my server"
+          }
+        ],
+        "network": "tcp,udp"
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "protocol": "freedom"
+    }
+  ]
+}
